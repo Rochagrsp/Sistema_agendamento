@@ -12,7 +12,7 @@ function reservar(linha,coluna,cadeira){
     // verifica se a cadeira estar livre
     if (sala[linha][coluna]==0){
     // muda a matriz para ocupado
-        sala[linha][coluna]==1
+        sala[linha][coluna]=1
     // muda a cor da cadeira para veremelha
         cadeira.style.backgroundColor="red"
 
@@ -22,5 +22,15 @@ function reservar(linha,coluna,cadeira){
     }else{
         document.getElementById("mensagem").innerText=
         "Cadeira Indisponivel!";
+
+         sala[linha][coluna]=0
+
+        cadeira.style.backgroundColor="green"
+
+        document.getElementById("mensagem").innerText=
+        //mudar a cor da cadeira para vermelhor
+        "cadeira liberada";
+        
     }
+    
 }
