@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#sala {
+    display: grid;
+
+    grid-template-columns: repeat(6, 60px);
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: rgb(21, 128, 0);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#mensagem {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+}
